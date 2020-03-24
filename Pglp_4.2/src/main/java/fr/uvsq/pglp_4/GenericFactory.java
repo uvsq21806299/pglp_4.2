@@ -5,25 +5,32 @@
  */
 package fr.uvsq.pglp_4;
 
+import java.util.Stack;
+
 /**
  *
  * @author andri
  */
 public class GenericFactory {
     
-     public void quit() {
-            // TODO Auto-generated method stub
-            System.out.println("Quit");
-            System.exit(0);
+    public void quit() {
+        // TODO Auto-generated method stub
+        System.out.println("Quit");
+        System.exit(0);
     }
     
-    /* public void undo
-     public void quit() {
-            // TODO Auto-generated method stub
-            System.out.println("Quit");
-            System.exit(0);
+    public void undo(Stack<Double> hist){
+        int i = 0;
+        if(hist.size()>1){
+            hist.remove(hist.size()-1);
+            
+        }
+        
+        
+        
+
+    
     }
     
-*/
     
 }

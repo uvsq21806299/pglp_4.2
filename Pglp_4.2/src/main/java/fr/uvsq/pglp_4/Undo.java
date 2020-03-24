@@ -5,6 +5,8 @@
  */
 package fr.uvsq.pglp_4;
 
+import java.util.Stack;
+
 /**
  *
  * @author andri
@@ -12,9 +14,13 @@ package fr.uvsq.pglp_4;
 public class Undo implements GenericCommand{
     
     private final GenericFactory undo;
-    private final Stack<double> history;
+    private final Stack<Double> hist;
     
-    
+    public Undo(GenericFactory undo, Stack<Double> hist){
+        
+        this.undo = undo;
+        this.hist = hist;
+    }
     
     @Override
     public void apply(){
