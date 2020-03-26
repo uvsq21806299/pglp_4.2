@@ -16,6 +16,10 @@ public class Quit implements GenericCommand {
     public Quit(GenericFactory quit) {
 	this.quit = quit;
     }
+
+    Quit() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 	
     @Override
 	public void apply() {

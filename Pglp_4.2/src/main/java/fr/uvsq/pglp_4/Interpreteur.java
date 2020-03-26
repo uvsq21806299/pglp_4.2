@@ -16,7 +16,7 @@ public class Interpreteur {
     
     private final Map<String, Command> commands;
     
-    private Interpreteur(){
+    Interpreteur(){
         this.commands = new HashMap<>();
     }
     
