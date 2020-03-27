@@ -7,12 +7,12 @@ Nous avons comme interface :
   - SpecificCommand
   
   
-Generic est implementé dans 
+Generic est implementé dans :
    - Quit
    - Undo
    
-Specific est implementé pour les operations
-    - Plus
-    - Moins
-    - Multi
-    - Div
+Specific est implementé pour les operations :
+   - Plus
+   - Moins
+   - Multi
+   - Div
