@@ -41,6 +41,15 @@ public class MoteurRPN {
         
         private Interpreteur interpreteur = new Interpreteur();
     
+        
+        public void moteurInit(){
+            interpreteur.empiler("+", plus);
+            interpreteur.empiler("-", moins);
+            interpreteur.empiler("*", multi);
+            interpreteur.empiler("/", div);
+            
+        }
+        
         /**
          * 
          * @param operande 
