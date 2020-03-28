@@ -15,16 +15,19 @@ public class Undo implements GenericCommand{
     
     private final GenericFactory undo;
     private final Stack<Double> hist;
+    private final MoteurRPN moteur;
     
-    public Undo(GenericFactory undo, Stack<Double> hist){
+    public Undo(GenericFactory undo, Stack<Double> hist, MoteurRPN moteur){
         
         this.undo = undo;
         this.hist = hist;
+        this.moteur = moteur;
     }
     
     @Override
     public void apply(){
         
+        undo.undo(this.hist, this.moteur);
     }
     
     

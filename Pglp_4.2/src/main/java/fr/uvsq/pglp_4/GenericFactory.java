@@ -19,10 +19,20 @@ public class GenericFactory {
         System.exit(0);
     }
     
-    public void undo(Stack<Double> hist){
+    public void undo(Stack<Double> hist, MoteurRPN moteur){
         int i = 0;
         if(hist.size()>1){
             hist.remove(hist.size()-1);
+            moteur.depiler();
+            while(i<2){
+                moteur.empiler(hist.pop());
+                i++;
+            }
+            
+            while(!hist.empty()){
+                hist.pop();
+            }
+            
             
         }
         

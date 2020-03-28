@@ -75,5 +75,15 @@ public class MoteurRPN {
         public void apply(String name){
             interpreteur.execute(name);
         }
+        
+        public void afficher(){
+            System.out.println(" la pile contient : ");
+            if(!this.pile.isEmpty()){
+                for(int i=0; i<this.pile.size(); i++){
+                    System.out.println(this.pile.elementAt(i));
+                }
+            }
+            
+        }
     
 }
