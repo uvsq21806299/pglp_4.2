@@ -20,7 +20,7 @@ public class Interpreteur {
         this.commands = new HashMap<>();
     }
     
-    public void addCommand(String name, Command command){
+    public void empiler(String name, Command command){
         this.commands.put(name, command);
     }
     

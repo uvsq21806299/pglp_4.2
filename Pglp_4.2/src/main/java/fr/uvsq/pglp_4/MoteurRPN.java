@@ -43,10 +43,10 @@ public class MoteurRPN {
     
         
         public void moteurInit(){
-            interpreteur.empiler("+", plus);
-            interpreteur.empiler("-", moins);
-            interpreteur.empiler("*", multi);
-            interpreteur.empiler("/", div);
+            interpreteur.addCommand("+", plus);
+            interpreteur.addCommand("-", moins);
+            interpreteur.addCommand("*", multi);
+            interpreteur.addCommand("/", div);
             
         }
         
